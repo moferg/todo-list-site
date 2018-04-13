@@ -1,0 +1,25 @@
+/* Main Styling */
+
+header h1 {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* /Main Styling */
+
+/* Classes */
+
+.center {
+    text-align: center;
+}
+
+.main-content {
+    margin-top: 75px;
+}
+
+/* /Classes */
