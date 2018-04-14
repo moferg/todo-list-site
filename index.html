@@ -16,7 +16,7 @@
         <main>
             <div class="main-content">
                 <div class="center">
-                    <ul>
+                    <ul id="todo-list">
                         <li>
                             - Example to do list item
                             <input type="checkbox" id="completed">
@@ -27,8 +27,8 @@
                 </div>
 
                 <div class="center">
-                    <input type="text" id="todo" placeholder="Add to do item here.">
-                    <button>Add to List</button>
+                    <input type="text" id="todo-input" placeholder="Add to do item here.">
+                    <button onclick="addToList()">Add to List</button>
                 </div>
             </div>
         </main>

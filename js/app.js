@@ -1,7 +1,16 @@
 function addToList() {
     // select text input
-    // store text input data
+    var todoItem = document.getElementById("todo-input").value; 
+    // create todo list item
+    var newTodo = document.createElement("li");
+    newTodo.innerText = todoItem;
     // add input data to HTML
+    var todoList = document.getElementById("todo-list");
+    todoList.appendChild(newTodo);
+    // TODO add '-' before new todo's
+    // TODO add checkbox after new todo's
+    // TODO empty input field on button click
+
 }
 
 function crossOut() {
