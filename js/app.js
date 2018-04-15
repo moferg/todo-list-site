@@ -37,3 +37,9 @@ function deleteFromList() {
     // select todo list item(s) w/ crossout
     // delete to do list item(s)
 }
+
+function checkIfEmpty() {
+    // if input field is empty
+        // alert the user to enter soemthing in the input
+    // else call addToList()
+}
