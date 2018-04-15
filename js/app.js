@@ -1,16 +1,31 @@
 function addToList() {
-    // select text input
+    
+    // select text input value
     var todoItem = document.getElementById("todo-input").value; 
+    
     // create todo list item
     var newTodo = document.createElement("li");
-    newTodo.innerText = todoItem;
-    // add input data to HTML
+    
+    // create checkbox for list item
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    
+    //create label for checkbox
+    var label = document.createElement("label");
+    label.innerText = " Completed"
+   
+    // append todo item to list item
+    newTodo.innerHTML= "- " + todoItem + " ";
+    
+    // append checkbox and label to list item
+    newTodo.appendChild(checkbox);
+    newTodo.appendChild(label);
+    
+    // append new todo item to list
     var todoList = document.getElementById("todo-list");
     todoList.appendChild(newTodo);
-    // TODO add '-' before new todo's
-    // TODO add checkbox after new todo's
+    
     // TODO empty input field on button click
-
 }
 
 function crossOut() {
