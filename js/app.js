@@ -1,8 +1,7 @@
 function addToList() {
     
     // select text input value
-    var todoItem = document.getElementById("todo-input").value; 
-    
+    var todoInput = document.getElementById("todo-input").value; 
     // create todo list item
     var newTodo = document.createElement("li");
     
@@ -15,7 +14,7 @@ function addToList() {
     label.innerText = " Completed"
    
     // append todo item to list item
-    newTodo.innerHTML= "- " + todoItem + " ";
+    newTodo.innerHTML= "- " + todoInput + " ";
     
     // append checkbox and label to list item
     newTodo.appendChild(checkbox);
@@ -24,8 +23,6 @@ function addToList() {
     // append new todo item to list
     var todoList = document.getElementById("todo-list");
     todoList.appendChild(newTodo);
-    
-    // TODO empty input field on button click
 }
 
 function crossOut() {
