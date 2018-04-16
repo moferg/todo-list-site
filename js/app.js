@@ -27,8 +27,12 @@ function addToList() {
 }
 
 function crossOut() {
+
     // select todo list item
+    var checkbox = document.getElementById("completed");
+
     // add crossout text decoration
+    checkbox.style.textDecoration = "line-through";
 }
 
 function deleteFromList() {
